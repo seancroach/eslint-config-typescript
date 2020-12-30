@@ -1,6 +1,6 @@
 {
 	"name": "@seancroach/eslint-config-typescript",
-	"version": "3.0.3",
+	"version": "3.0.4",
 	"description": "A shared ESLint configuration I use across my TypeScript projects.",
 	"license": "MIT",
 	"repository": "seancroach/eslint-config-typescript",

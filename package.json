@@ -1,7 +1,7 @@
 {
 	"name": "@seancroach/eslint-config-typescript",
 	"version": "3.0.0",
-	"description": "A shared eslint configuration I use across my TypeScript projects.",
+	"description": "A shared ESLint configuration I use across my TypeScript projects.",
 	"license": "MIT",
 	"repository": "seancroach/esling-config-typescript",
 	"author": "Sean Colin Roach <me@seancroach.dev> (http://seancroach.dev)",
@@ -15,14 +15,14 @@
 	},
 	"keywords": [
 		"config",
-		"configurations",
+		"configuration",
 		"eslint",
+		"eslint-config",
 		"ts",
 		"typescript"
 	],
 	"peerDependencies": {
-		"eslint": "^7.16.0",
-		"prettier": "^2.2.1"
+		"eslint": ">=3"
 	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.11.1",

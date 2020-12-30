@@ -1,7 +1,7 @@
 {
-  "extends": "@seancroach/tsconfig",
-  "compilerOptions": {
-    "noEmit": true
-  },
-  "files": ["test/testFile.ts"]
+	"extends": "@seancroach/tsconfig",
+	"compilerOptions": {
+		"noEmit": true
+	},
+	"files": ["test/testFile.ts"]
 }

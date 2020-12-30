@@ -34,7 +34,7 @@ Install `@seancroach/eslint-config-typescript` and its peer dependencies through
 `npm`:
 
 ```
-npm install --save-dev @seancroach/eslint-config-typescript prettier eslint
+npm install --save-dev @seancroach/eslint-config-typescript eslint prettier
 ```
 
 ## Usage

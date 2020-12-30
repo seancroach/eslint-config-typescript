@@ -1,0 +1,51 @@
+{
+  "name": "@seancroach/eslint-config-typescript",
+  "version": "3.0.0",
+  "description": "A shared eslint configuration I use across my TypeScript projects.",
+  "license": "MIT",
+  "repository": "seancroach/esling-config-typescript",
+  "author": "Sean Colin Roach <me@seancroach.dev> (http://seancroach.dev)",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "prepare": "prettier \"**\" --write",
+    "test": "prettier \"**\" --check && ava"
+  },
+  "keywords": [
+    "config",
+    "configurations",
+    "eslint",
+    "ts",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@seancroach/tsconfig": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "ava": "^3.14.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6",
+    "prettier": "^2.2.1",
+    "prettier-plugin-package": "^1.3.0",
+    "typescript": "^4.1.3"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run prepare"
+    }
+  }
+}

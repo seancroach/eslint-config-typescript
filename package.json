@@ -3,7 +3,7 @@
 	"version": "3.0.3",
 	"description": "A shared ESLint configuration I use across my TypeScript projects.",
 	"license": "MIT",
-	"repository": "seancroach/esling-config-typescript",
+	"repository": "seancroach/eslint-config-typescript",
 	"author": "Sean Colin Roach <me@seancroach.dev> (http://seancroach.dev)",
 	"main": "index.js",
 	"engines": {

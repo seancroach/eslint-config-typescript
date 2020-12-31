@@ -13,6 +13,9 @@
 		"prepare": "prettier \"**\" --write",
 		"test": "prettier \"**\" --check && ava"
 	},
+	"files": [
+		"index.js"
+	],
 	"keywords": [
 		"config",
 		"configuration",

@@ -29,12 +29,13 @@ be downloaded alongside it:
 
 - [`eslint`](https://eslint.org/)
 - [`prettier`](https://prettier.io/)
+- [`typescript`](https://www.typescriptlang.org/)
 
 Install `@seancroach/eslint-config-typescript` and its peer dependencies through
 `npm`:
 
 ```
-npm install --save-dev @seancroach/eslint-config-typescript eslint prettier
+npm install --save-dev @seancroach/eslint-config-typescript eslint prettier typescript
 ```
 
 ## Usage

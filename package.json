@@ -10,8 +10,8 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"prepare": "prettier \"**\" --write",
-		"test": "prettier \"**\" --check && ava"
+		"prepare": "prettier ** --write",
+		"test": "prettier ** --check && ava"
 	},
 	"files": [
 		"index.js"

@@ -40,8 +40,10 @@ npm install --save-dev @seancroach/eslint-config-typescript eslint prettier type
 
 ## Usage
 
-You can configure ESlint a variety of ways. I suggest to do a majority of your
-configurations from your `package.json`:
+You can configure ESlint a variety of ways; refer to the documentation [here](https://eslint.org/docs/user-guide/configuring) for more info.
+
+I suggest to do your
+configurations from your `package.json` whenever possible to reduce the amount of dotfiles in your project. For example, in your `package.json`, do the following:
 
 ```json
 {
@@ -49,6 +51,22 @@ configurations from your `package.json`:
 	"eslintConfig": {
 		"extends": "@seancroach/eslint-config-typescript"
 	}
+}
+```
+
+By default, `@seancroach/eslint-config-typescript` will look for a `tsconfig.eslint.json` file in your workspace directory. It is advised your `tsconfig.eslint.json` file looks like so:
+
+```jsonc
+{
+  "extends": "<path to (root) tsconfig>",
+  "compilerOptions": {
+    // Ensure no one accidentally builds the "lint" project.
+    "noEmit": true
+  },
+  "include": [
+    // Include all TypeScript files.
+    "**/*.ts"
+  ]
 }
 ```
 
